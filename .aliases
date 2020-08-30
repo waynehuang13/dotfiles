@@ -1,0 +1,18 @@
+alias untar='tar -xvf'
+alias l='ls -l'
+alias ls='ls -hGF'
+alias la='ls -ahGF'
+alias ll='ls -lhaG'
+alias grep='grep --color=auto'
+alias mkdir='mkdir -p'
+alias untar='tar -xvf'
+alias diff='colordiff'
+alias df='df -h'
+alias du='du -c -h'
+alias ping='ping -c 5'
+alias utime='date +%s'
+alias epoch='date +%s'
+alias be='bundle exec'
+alias utc='date -u'
+
+alias workspace='cd ~/Workspace
