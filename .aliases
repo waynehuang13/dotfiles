@@ -15,4 +15,4 @@ alias epoch='date +%s'
 alias be='bundle exec'
 alias utc='date -u'
 
-alias workspace='cd ~/Workspace
+alias workspace='cd ~/Workspace'
