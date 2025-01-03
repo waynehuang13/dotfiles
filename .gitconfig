@@ -8,7 +8,7 @@
 	trustExitCode = true
 [user]
 	name = Wayne Huang
-	email = goolala@gmail.com
+	email = waynehuang13@gmail.com
 [commit]
 	template = /Users/wayne/.stCommitMsg
 [filter "lfs"]
