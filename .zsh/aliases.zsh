@@ -25,4 +25,4 @@ alias vim=nvim
 
 alias vm_restartdhcpd='sudo /Applications/VMware\ Fusion.app/Contents/Library/vmnet-cli --stop;sudo /Applications/VMware\ Fusion.app/Contents/Library/vmnet-cli --start'
 
-
+alias reload_shell="source ~/.zshrc"
