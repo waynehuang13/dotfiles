@@ -9,7 +9,10 @@
 eval "$(starship init zsh)"
 
 # Load Direnv
-eval "$(direnv hook zsh)"
+. $(brew --prefix asdf)/libexec/asdf.sh
+eval "$(asdf exec direnv hook zsh)"
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+# eval "$(direnv hook zsh)"
 
 # Load zoxide
 eval "$(zoxide init zsh)"
@@ -18,4 +21,3 @@ eval "$(zoxide init zsh)"
 # export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # PROMPT="${PROMPT}"$'\n\n'
-eval "$(asdf exec direnv hook zsh)"
