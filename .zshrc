@@ -18,3 +18,4 @@ eval "$(zoxide init zsh)"
 # export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # PROMPT="${PROMPT}"$'\n\n'
+eval "$(asdf exec direnv hook zsh)"
