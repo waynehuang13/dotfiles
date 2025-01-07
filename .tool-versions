@@ -1,2 +1,2 @@
-layout python
+python 3.11.9
 direnv 2.35.0
