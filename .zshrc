@@ -6,7 +6,7 @@
 [[ -f ~/.zsh/goto.zsh ]] && source ~/.zsh/goto.zsh
 
 # Load Starship
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
 
 # Load Direnv
 eval "$(direnv hook zsh)"
