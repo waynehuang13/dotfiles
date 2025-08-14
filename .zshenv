@@ -6,7 +6,7 @@ export PATH=$PATH:$HOME/.bin:$HOME/.cargo/bin
 export NVM_DIR="$HOME/.nvm"
 
 # Vagrant config needed inside WSL2
-export VAGRANT_DEFAULT_PROVIDER="vmware_desktop"
+export VAGRANT_DEFAULT_PROVIDER="virtualbox"
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
 
 export EDITOR=vim

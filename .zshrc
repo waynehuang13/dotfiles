@@ -9,9 +9,9 @@
 eval "$(starship init zsh)"
 
 # Load Direnv
-. $(brew --prefix asdf)/libexec/asdf.sh
-eval "$(asdf exec direnv hook zsh)"
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+# . $(brew --prefix asdf)/libexec/asdf.sh
+# eval "$(asdf exec direnv hook zsh)"
+# source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 # eval "$(direnv hook zsh)"
 
 # Load zoxide
