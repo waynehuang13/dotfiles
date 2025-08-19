@@ -1,5 +1,25 @@
 # Added locations to path variable
-export PATH=$PATH:$HOME/.bin:$HOME/.cargo/bin
+export PATH=$HOME/.local/bin:$HOME/.bin:$HOME/.cargo/bin:$PATH
+
+# python venv activation
+cd() {
+    builtin cd "$@"
+    local current_dir="$PWD"
+    local parent_dir="$current_dir"
+
+    while [ "$parent_dir" != "/" ]; do
+        if [ -f "$parent_dir/.venv/bin/activate" ]; then
+            source "$parent_dir/.venv/bin/activate"
+            return 0
+        fi
+        parent_dir="$(dirname "$parent_dir")"
+    done
+
+    if [ -n "$VIRTUAL_ENV" ] && [ "$parent_dir" = "/" ]; then
+        deactivate
+    fi
+}
+
 # export PATH=$PATH:$HOME/workspace/central-cli
 
 # NVM directory
